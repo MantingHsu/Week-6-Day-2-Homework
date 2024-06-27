@@ -1,0 +1,179 @@
+/* Header */
+header {
+    width: 100%;
+    min-height: 400px;
+    background: lightgrey url(images/cliff_ocean.jpg) no-repeat center center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main-header {
+    background-color: rgba(255, 255, 255, 0.8);
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 5px;
+    position: relative;
+}
+.main-header .logo img {
+    width: 125px;
+    height: auto;
+}
+
+/* Navigation */
+.navbar-light .navbar-nav .nav-link {
+    color: #888;
+}
+.navbar-light .navbar-nav .nav-link:hover {
+    color: #9ed034;
+}
+.navbar-light .navbar-nav .nav-item.active .nav-link {
+    background-color: #9ed034;
+    color: #fff;
+    border-radius: 5px;
+}
+.navbar-toggler {
+    border: none;
+}
+.navbar-toggler:focus {
+    outline: none;
+}
+
+/* Main */
+main {
+    padding: 3em 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+main h1 {
+    font-size: 2.5em;
+    padding-bottom: 0.5em;
+    color: #9ed034;
+}
+main h2 {
+    font-size: 1.7em;
+}
+
+/* Partners */
+section {
+    width: 100%;
+    background-color: #4288C3;
+    padding: 2em 0;
+}
+.partner img {
+    background-color: #fff;
+    border-radius: 50%;
+    padding: 1.3em;
+    margin: 0.75em;
+    max-width: 90px;
+}
+
+@media (max-width: 576px) {
+    .partner img {
+        max-width: 60px;
+        height: 60px;
+    }
+}
+
+/* Footer */
+footer {
+    width: 100%;
+    background-color: #ecfab8;
+    padding: 1em 0;
+}
+footer #nondisclaimer .copy {
+    padding: 3.5em;
+    text-align: center;
+    font-size: 0.9em;
+}
+footer #nondisclaimer .social {
+    padding: 2.5em;
+    text-align: center;
+}
+footer #disclaimer {
+    clear: both;
+    text-align: center;
+    padding-top: 1em;
+}
+footer #disclaimer p {
+    font-size: 0.85em;
+}
+footer #nondisclaimer .social .fa {
+    padding: 15px;
+    font-size: 15px;
+    width: 15px;
+    text-align: center;
+    text-decoration: none;
+    margin: 0 4px;
+    border-radius: 50%;
+}
+footer #nondisclaimer .social .fa:hover {
+    opacity: 0.7;
+}
+footer #nondisclaimer .social .fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+footer #nondisclaimer .social .fa-twitter {
+    background: #55ACEE;
+    color: white;
+}
+footer #nondisclaimer .social .fa-instagram {
+    background: #125688;
+    color: white;
+}
+
+/* Media Queries */
+@media (max-width: 576px) {
+    .main-header {
+        flex-direction: column;
+        align-items: center;
+    }
+    .main-header .logo img {
+        width: 100px;
+    }
+    .navbar-collapse {
+        text-align: center;
+    }
+    .navbar-nav {
+        text-align: center;
+    }
+    .navbar-nav .nav-item {
+        display: block;
+        margin-bottom: 1em;
+    }
+    main .row > div {
+        margin-bottom: 1.5em;
+    }
+
+}
+
+@media (max-width: 768px) {
+    .main-header {
+        flex-direction: row;
+        align-items: center;
+    }
+    .navbar-collapse {
+        text-align: center;
+    }
+    .navbar-nav {
+        text-align: center;
+    }
+    .navbar-nav .nav-item {
+        display: block;
+        margin-bottom: 1em;
+    }
+}
+
+@media (max-width: 992px) {
+    .main-header {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .navbar-collapse {
+        text-align
+    }
